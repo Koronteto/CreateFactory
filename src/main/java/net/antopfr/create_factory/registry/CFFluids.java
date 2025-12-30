@@ -1,7 +1,6 @@
 package net.antopfr.create_factory.registry;
 
 import com.simibubi.create.AllFluids;
-import com.simibubi.create.AllTags;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import net.antopfr.create_factory.CreateFactory;
 import com.tterrag.registrate.util.entry.FluidEntry;
@@ -23,7 +22,6 @@ public class CFFluids {
                     .lang("Sweet Berries Jam")
                     .properties(b -> b.viscosity(2000)
                             .density(1400))
-                    .tag(AllTags.forgeFluidTag("jam"))
                     .fluidProperties(p -> p.levelDecreasePerBlock(2)
                             .tickRate(25)
                             .slopeFindDistance(3)

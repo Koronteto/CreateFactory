@@ -3,7 +3,6 @@ package net.antopfr.create_factory;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import net.antopfr.create_factory.registry.CFFluids;
 import net.antopfr.create_factory.registry.CFItems;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -20,7 +19,6 @@ public class CreateFactory
     public CreateFactory()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        IEventBus forgeEventBus = MinecraftForge.EVENT_BUS;
 
         MinecraftForge.EVENT_BUS.register(this);
 
@@ -29,10 +27,6 @@ public class CreateFactory
         CFFluids.register();
         CFCreativeTab.register(modEventBus);
         CFItems.register();
-    }
-
-    public static ResourceLocation asResource (String path) {
-        return new ResourceLocation(MOD_ID, path);
     }
 
     public static CreateRegistrate registrate() {

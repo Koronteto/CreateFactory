@@ -1,5 +1,6 @@
 package net.antopfr.create_factory;
 
+import net.antopfr.create_factory.registry.CFFluids;
 import net.antopfr.create_factory.registry.CFItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -28,7 +29,6 @@ public class CFCreativeTab {
                         pOutput.accept(CFItems.WHITE_CHOCOLATE_ROLL.get());
                         pOutput.accept(CFItems.CARAMEL_ROLL.get());
                         pOutput.accept(CFItems.SWEET_BERRIES_JAM_ROLL.get());
-                        pOutput.accept(CFItems.CARAMEL_WAFFLE.get());
                         pOutput.accept(CFItems.HONEY_BERRIES.get());
                         pOutput.accept(CFItems.CHOCOLATE_APPLE.get());
                         pOutput.accept(CFItems.DARK_CHOCOLATE_APPLE.get());
@@ -42,6 +42,7 @@ public class CFCreativeTab {
                         pOutput.accept(CFItems.WHITE_CHOCOLATE_WAFFLE.get());
                         pOutput.accept(CFItems.CARAMEL_WAFFLE.get());
                         pOutput.accept(CFItems.SWEET_BERRIES_JAM_WAFFLE.get());
+                        pOutput.accept(CFFluids.SWEET_BERRIES_JAM.getBucket().get());
                     })
                     .build());
 
